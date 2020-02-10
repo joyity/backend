@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package proto;
+
+message LoginRq {
+    string username = 1;
+    string password = 2;
+}
+
+message LoginRsp {
+    bool success = 1;
+    string token = 2;
+    int64 validUntil = 3;
+}
